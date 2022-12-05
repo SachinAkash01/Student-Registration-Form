@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SLIIT Academy - IT21351372</title>
+	<link rel = "stylesheet" type = "text/css" href="myStyles.css" />
+<style type="text/css">
+body{
+	background-image: url("SLIIT4.jpg");
+	background-position: center;
+	background-size: cover;
+	font-family: sans-serif;
+	margin-top: 40px;
+}
+</style>
+</head>
+<body>
+	<div class="regform"><h1>Registration Form - SLIITA MOOC</h1></div>
+	<div class="main">
+		<form>
+			<div id="name">
+			<h2 class="name">Full Name:</h2>
+			<input class="firstname" type="text" name="first_name" placeholder="Enter first name.." required autofocus><br>
+			<label class="firstlabel">First Name</label>
+			<input class="lastname" type="text" name="last_name" placeholder="Enter last name.." required>
+			<label class="lastlabel">Last Name</label>
+			</div>
+			
+			<h2 class="name">Degree:</h2>
+		  <input class="degree" type="text" name="degree" placeholder="Enter Your Degree Program.." list="specialization" required>
+			
+		  <h2 class="name">Email:</h2>
+		  <input class="email" type="email" name="email" placeholder="Eg: john@gmail.com" pattern="{}[@gmail.com]">
+			
+			<h2 class="name">Contact No:</h2>
+		  <input class="code" type="text" name="area_code" value="+94" readonly>
+			<label class="area-code">Area Code</label>
+			
+		  <input class="number" type="text" name="phone" maxlength="9" placeholder="Eg: 763456789" required>
+			<label class="phone-number">Phone Number</label>
+			
+			<h2 class="name">Subject:</h2>
+			<select class="option" name="subject">
+			<option disabled="disabled" selected="selected">--Choose Academic Year</option>
+				<option> Year 1 Semester 1</option>
+				<option> Year 1 Semester 2</option>
+				<option> Year 2 Semester 1</option>
+				<option> Year 2 Semester 2</option>
+				<option> Year 3 - UoB (Top-Up)</option>
+			</select>
+			
+			<h2 id="student"><font color="#E3CACB"/>Have you ever completed a MOOC before?</h2>
+			
+			<label class="radio">
+				<input class="radio-one" type="radio" name="rdoOption">
+				<span class="checkmark"></span>
+				Yes
+			</label>
+			<label class="radio">
+				<input class="radio-two" type="radio" name="rdoOption">
+				<span class="checkmark"></span>
+				No
+			</label>
+			
+		  <button type="submit">Register</button>
+	  </form>
+		<datalist id="specialization">
+			<option value="BSc.(Hons) Computer Science & Software Engineering"></option>
+			<option value="BSc.(Hons) Computer Networking"></option>
+</datalist>
+	</div>
+</body>
+</html>
